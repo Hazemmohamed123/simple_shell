@@ -37,7 +37,8 @@ void print_error(info_t *info, char *estr)
 {
 _eputs(info->fname);
 _eputs(": ");
-print_d(info->line_count, STDERR_FILENO);	_eputs(": ");
+print_d(info->line_count, STDERR_FILENO);
+_eputs(": ");
 _eputs(info->argv[0]);
 _eputs(": ");
 _eputs(estr);
@@ -64,7 +65,7 @@ count++;
 }
 else
 _abs_ = input;
-current = _abs_;	
+current = _abs_;
 for (i = 1000000000; i > 1; i /= 10)
 {
 if (_abs_ / i)

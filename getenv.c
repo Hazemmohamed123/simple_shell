@@ -65,7 +65,7 @@ if (!buf)
 return (1);
 _strcpy(buf, var);
 _strcat(buf, "=");
-_strcat(buf, value);	
+_strcat(buf, value);
 node = info->env;
 while (node)
 {
